@@ -58,7 +58,7 @@ a {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("bg.jpg");
+  background-image: url("bg1.webp");
   background-size: cover;
   background-position: center;
 }
@@ -139,7 +139,7 @@ a {
   border-bottom: 1.5px solid #aaaaaa;
 }
 .input_box input:focus {
-  border-color: #7d2ae8;
+  border-color: #018264;
 }
 .input_box i {
   position: absolute;
@@ -154,7 +154,7 @@ a {
 }
 .input_box input:focus ~ i.email,
 .input_box input:focus ~ i.password {
-  color: #7d2ae8;
+  color: #018264;
 }
 .input_box i.pw_hide {
   right: 0;
@@ -168,7 +168,7 @@ a {
   justify-content: space-between;
 }
 .form_container a {
-  color: #7d2ae8;
+  color: #018264;
   font-size: 12px;
 }
 .form_container a:hover {
@@ -180,7 +180,7 @@ a {
   white-space: nowrap;
 }
 .checkbox input {
-  accent-color: #7d2ae8;
+  accent-color: #018264;
 }
 .checkbox label {
   font-size: 12px;
@@ -189,7 +189,7 @@ a {
   color: #0b0217;
 }
 .form_container .button {
-  background: #7d2ae8;
+  background: #018264;
   margin-top: 30px;
   width: 100%;
   padding: 10px 0;
@@ -199,4 +199,49 @@ a {
   font-size: 12px;
   text-align: center;
   margin-top: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('bg1.webp') center/cover no-repeat fixed; /* Replace 'bg1.webp' with your image */
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  /*background: rgba(0, 0, 0, -1); /* Adjust the last value (0.5) for transparency */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  /*background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+  color: #fff;
+}
+
+.nav_logo {
+  font-size: x-large;
+  margin-left: 10px; /* Add margin to the left of the logo */
+  color: #fff; /* Set text color to white */
+  text-decoration: none; /* Remove underline from text */
+}
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav_item {
+  margin-right: 15px;
+}
+
+.button {
+  margin-left: 15px;
 }
